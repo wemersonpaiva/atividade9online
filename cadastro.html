@@ -41,7 +41,7 @@
 
             <div class="opcoes-cadastros">
                 <label for="telefone">Telefone</label>
-                <input type="number" id="telefone" disabled>
+                <input type="tel" oninput="this.value = this.value.replace(/[^0-9()+ -]/g, '');" id="telefone" disabled>
             </div>
         </div>
 
