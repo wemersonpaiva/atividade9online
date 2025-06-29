@@ -271,12 +271,12 @@ button:disabled {
         padding: 15px;
         border-radius: 20px;
         padding: 55px;
-        border-radius: 25px;
+        border-radius: 0px;
         opacity: 75%;
     }
 
     .login-container {
-        border-radius: 25px;
+        border-radius: 20px;
     }
 
     #imagem-logo img {
