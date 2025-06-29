@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="botao-sair" onclick="sair()">SAIR</button>
+        <h1>AGENDA DE CONTATOS</h1>
+
+        <div id="imagem-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="menu-cadastro">
+            <h2>Cadastro de Contato</h2>
+            <div id="posicaoElemento">Nenhum contato</div>
+
+
+            <div id="nomecss" class="opcoes-cadastros">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" disabled>
+            </div>
+
+            <div id="sobrenomecss" class="opcoes-cadastros">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" disabled>
+            </div>
+
+
+            <div class="opcoes-cadastros">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" disabled>
+            </div>
+
+            <div class="opcoes-cadastros">
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone" disabled>
+            </div>
+        </div>
+
+        <div class="botoes-navegacao">
+            <button id="primeiro" onclick="navegarPara(0)">Primeiro</button>
+            <button id="anterior" onclick="navegarPara(posicao - 1)">Anterior</button>
+            <button id="proximo" onclick="navegarPara(posicao + 1)">Próximo</button>
+            <button id="ultimo" onclick="navegarPara(contatos.length - 1)">Último</button>
+        </div>
+
+        <div class="menu-principal">
+            <button id="incluir" onclick="incluirContato()">INCLUIR</button>
+            <button id="editar" onclick="editarContato()">EDITAR</button>
+            <button id="salvar" onclick="salvarContato()">SALVAR</button>
+            <button id="cancelar" onclick="cancelarEdicao()">CANCELAR</button>
+            <button id="excluir" onclick="excluirContato()">EXCLUIR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
