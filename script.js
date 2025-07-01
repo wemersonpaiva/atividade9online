@@ -20,20 +20,6 @@ function fazerLogin() {
 // Atualiza a interface com o contato atual
 function mostrarContatoAtual() {
     if (posicao >= 0 && posicao < contatos.length) {
-        const contato = contatos[posicao];
-        document.getElementById('nome').value = contato.nome || '';
-        document.getElementById('sobrenome').value = contato.sobrenome || '';
-        document.getElementById('endereco').value = contato.endereco || '';
-        document.getElementById('telefone').value = contato.telefone || '';
-
-        document.getElementById("posicaoElemento").textContent = `Elemento ${posicao + 1} de ${contatos.length}`
-    } else {
-        limpaForm();
-    }
-}
-
-function mostrarContatoAtual() {
-    if (posicao >= 0 && posicao < contatos.length) {
         const c = contatos[posicao];
         document.getElementById('nome').value = c.nome;
         document.getElementById('sobrenome').value = c.sobrenome;
